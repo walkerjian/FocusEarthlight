@@ -25,7 +25,10 @@
     "Coordinates are placeholders and must not be treated as authoritative."
   ],
   "provenance": [
-    "Scaffold fixture created locally for schema development."
+    {
+      "kind": "scaffold",
+      "detail": "Sample site-pack fixture created locally for schema development."
+    }
   ],
   "revision_history": [
     "v0.1.0 initial scaffold fixture"

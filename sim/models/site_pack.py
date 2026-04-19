@@ -12,6 +12,11 @@ class KnowledgeLayers(BaseModel):
     scenario_assumption: list[str]
 
 
+class ProvenanceEntry(BaseModel):
+    kind: str
+    detail: str
+
+
 class SitePack(BaseModel):
     schema_version: str = "0.1.0"
     site_id: str
@@ -23,6 +28,6 @@ class SitePack(BaseModel):
     terrain_summary: str | None = None
     hazard_summary: str | None = None
     uncertainty_notes: list[str] = []
-    provenance: list[str]
+    provenance: list[ProvenanceEntry]
     revision_history: list[str]
     notes: str | None = None

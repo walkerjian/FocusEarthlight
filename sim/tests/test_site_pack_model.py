@@ -14,3 +14,4 @@ def test_site_pack_fixture_loads() -> None:
     assert model.site_id == "candor"
     assert model.location_status == "real-region-scenario-site"
     assert "Coordinates are placeholders" in model.uncertainty_notes[0]
+    assert model.provenance[0].kind == "scaffold"
