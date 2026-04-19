@@ -6,10 +6,10 @@ venv:
 	$(PYTHON) -m venv .venv
 
 install:
-	. .venv/bin/activate && pip install -e ".[dev]"
+	. .venv/bin/activate && python -m pip install -e ".[dev]"
 
 test:
-	. .venv/bin/activate && pytest
+	. .venv/bin/activate && python -m pytest
 
 lint:
 	. .venv/bin/activate && ruff check .
