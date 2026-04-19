@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1.0",
+  "id": "hc_001",
+  "claim": "The greenhouse power dip was caused by routine load balancing.",
+  "claim_type": "causal",
+  "status": "active",
+  "confidence": 0.45,
+  "evidence_for": ["Recent scheduled maintenance in adjacent sector."],
+  "evidence_against": ["No confirmed maintenance notice attached to this incident."],
+  "alternative_hypotheses": ["Sensor fault", "Unauthorized load draw", "Transient battery bus issue"],
+  "falsifiers": ["Verified grid log showing no balancing event occurred at that time."],
+  "unknowns": ["Full battery telemetry not yet ingested."],
+  "review_date": "2026-05-01",
+  "notes": "Starter fixture."
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://focus-earthlight.local/schemas/world-state.schema.json",
+  "title": "WorldState",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "tick",
+    "colony_name",
+    "air",
+    "food",
+    "power",
+    "labor",
+    "morale"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "tick": { "type": "integer", "minimum": 0 },
+    "colony_name": { "type": "string" },
+    "air": { "type": "number" },
+    "food": { "type": "number" },
+    "power": { "type": "number" },
+    "labor": { "type": "number" },
+    "morale": { "type": "number" }
+  },
+  "additionalProperties": false
+}

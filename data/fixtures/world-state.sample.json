@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "tick": 0,
+  "colony_name": "Candor",
+  "air": 100.0,
+  "food": 100.0,
+  "power": 100.0,
+  "labor": 100.0,
+  "morale": 100.0
+}

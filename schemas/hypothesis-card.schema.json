@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://focus-earthlight.local/schemas/hypothesis-card.schema.json",
+  "title": "HypothesisCard",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "claim",
+    "claim_type",
+    "status",
+    "evidence_for",
+    "evidence_against",
+    "alternative_hypotheses",
+    "falsifiers",
+    "review_date"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "id": { "type": "string" },
+    "claim": { "type": "string" },
+    "claim_type": {
+      "type": "string",
+      "enum": ["descriptive", "causal", "predictive", "normative", "strategic"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "revised", "retired"]
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "evidence_for": { "type": "array", "items": { "type": "string" } },
+    "evidence_against": { "type": "array", "items": { "type": "string" } },
+    "alternative_hypotheses": { "type": "array", "items": { "type": "string" } },
+    "falsifiers": { "type": "array", "items": { "type": "string" } },
+    "unknowns": { "type": "array", "items": { "type": "string" } },
+    "review_date": { "type": "string", "format": "date" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}
