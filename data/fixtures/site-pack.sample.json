@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "site_id": "candor",
+  "name": "Candor",
+  "world_body": "Mars",
+  "location_status": "real-region-scenario-site",
+  "coordinates": {
+    "latitude": 18.4,
+    "longitude": 77.5
+  },
+  "knowledge_layers": {
+    "observation": [
+      "Placeholder coordinates exist for scaffold purposes only."
+    ],
+    "inference": [
+      "A future verified candidate site will require terrain, hazard, and provenance updates."
+    ],
+    "scenario_assumption": [
+      "Candor is currently treated as a provisional Mars colony seed."
+    ]
+  },
+  "terrain_summary": "Placeholder terrain summary pending verified candidate site selection.",
+  "hazard_summary": "Placeholder hazard summary pending verified candidate site selection.",
+  "uncertainty_notes": [
+    "Coordinates are placeholders and must not be treated as authoritative."
+  ],
+  "provenance": [
+    "Scaffold fixture created locally for schema development."
+  ],
+  "revision_history": [
+    "v0.1.0 initial scaffold fixture"
+  ],
+  "notes": "This fixture exists to validate the schema and to preserve observation/inference/scenario-assumption separation."
+}
