@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://focus-earthlight.local/schemas/audit-record.schema.json",
+  "title": "AuditRecord",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "record_type",
+    "created_at",
+    "summary"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "id": { "type": "string" },
+    "record_type": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "summary": { "type": "string" },
+    "references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "outcome": { "type": "string" }
+  },
+  "additionalProperties": false
+}
