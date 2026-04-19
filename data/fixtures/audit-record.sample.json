@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "id": "audit_001",
+  "record_type": "analysis",
+  "created_at": "2026-04-19T12:00:00Z",
+  "summary": "Initial audit record fixture for schema validation.",
+  "references": [
+    "hc_001"
+  ],
+  "outcome": "pending"
+}

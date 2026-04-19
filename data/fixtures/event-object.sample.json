@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1.0",
+  "id": "event_001",
+  "title": "Greenhouse power fluctuation",
+  "event_type": "local_ops",
+  "summary": "A short power dip affected greenhouse lighting.",
+  "claims": [
+    "Greenhouse lighting was interrupted for 12 minutes."
+  ],
+  "source_ids": [
+    "source_001"
+  ]
+}

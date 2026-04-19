@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://focus-earthlight.local/schemas/event-object.schema.json",
+  "title": "EventObject",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "event_type",
+    "claims"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "event_type": { "type": "string" },
+    "summary": { "type": "string" },
+    "claims": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
