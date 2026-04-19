@@ -9,6 +9,7 @@ def main() -> None:
     pairs = [
         ("data/fixtures/hypothesis-card.sample.json", "schemas/hypothesis-card.schema.json"),
         ("data/fixtures/world-state.sample.json", "schemas/world-state.schema.json"),
+        ("data/fixtures/site-pack.sample.json", "schemas/site-pack.schema.json"),
     ]
     for fixture_rel, schema_rel in pairs:
         fixture = json.loads((ROOT / fixture_rel).read_text())

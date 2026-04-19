@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://focus-earthlight.local/schemas/site-pack.schema.json",
+  "title": "SitePack",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "site_id",
+    "name",
+    "world_body",
+    "location_status",
+    "knowledge_layers",
+    "provenance",
+    "revision_history"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "site_id": { "type": "string" },
+    "name": { "type": "string" },
+    "world_body": { "type": "string" },
+    "location_status": {
+      "type": "string",
+      "enum": ["real", "real-region-scenario-site", "hypothetical"]
+    },
+    "coordinates": {
+      "type": "object",
+      "required": ["latitude", "longitude"],
+      "properties": {
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "knowledge_layers": {
+      "type": "object",
+      "required": ["observation", "inference", "scenario_assumption"],
+      "properties": {
+        "observation": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "inference": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "scenario_assumption": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "terrain_summary": { "type": "string" },
+    "hazard_summary": { "type": "string" },
+    "uncertainty_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "provenance": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "revision_history": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}
